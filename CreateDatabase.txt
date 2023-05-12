@@ -1,0 +1,23 @@
+
+CREATE DATABASE aluno_db;
+CREATE USER aluno WITH PASSWORD 'aluno123';
+GRANT ALL PRIVILEGES ON DATABASE aluno_db TO aluno;
+
+ALTER USER aluno WITH PASSWORD '12345';
+
+#Caminho do pqsl no Lab6: C:\Program Files\PostgreSQL\14\bin
+
+#Conectando usando o prompt de commando
+psql -U postgres -p 5433
+psql -U aluno
+psql -U aluno -p 5433
+psql -U aluno -p 5433 -d aluno_db
+
+SELECT * FROM PG_DATABASE;
+
+Exercício: 
+1)Criar um banco  com seu nome
+2)Criar um usuário com seu nome
+3)Definir a senha
+4)Conectar no seu banco
+5)Verificar os bancos e usuários existentes.
