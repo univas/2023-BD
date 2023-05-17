@@ -1,17 +1,30 @@
+#Este arquivo contém comandos para gerenciamento de bancos e usuários
 
+#Cria um banco de dados
 CREATE DATABASE aluno_db;
+
+#Cria um usuário
 CREATE USER aluno WITH PASSWORD 'aluno123';
+
+#Atribui permissão para o usuário aluno acessar o banco aluno_db
 GRANT ALL PRIVILEGES ON DATABASE aluno_db TO aluno;
 
+#Altera a senha do usuário
 ALTER USER aluno WITH PASSWORD '12345';
+
+#Renomeia o banco
+ALTER DATABASE aluno_db RENAME TO U_BANK;
 
 #Caminho do pqsl no Lab6: C:\Program Files\PostgreSQL\14\bin
 
 #Conectando usando o prompt de commando
+
+#conectando no banco com o usuário postgres
 psql -U postgres -p 5433
-psql -U aluno
-psql -U aluno -p 5433
+
+#conectando no banco aluno_db com o usuário aluno
 psql -U aluno -p 5433 -d aluno_db
+psql -U aluno -p 5433 -d u_bank
 
 SELECT * FROM PG_DATABASE;
 
@@ -21,3 +34,14 @@ Exercício:
 3)Definir a senha
 4)Conectar no seu banco
 5)Verificar os bancos e usuários existentes.
+
+#Criando um outro banco
+CREATE DATABASE U_SCHOOL;
+CREATE USER school WITH PASSWORD '1234';
+GRANT ALL PRIVILEGES ON DATABASE U_SCHOOL TO school;
+
+#Teste para remover a permissão do usuário de acessar um banco
+REVOKE ALL PRIVILEGES ON DATABASE U_SCHOOL FROM school;
+
+#conectando no banco u_school com o usuário school
+psql -U school -p 5433 -d u_school
