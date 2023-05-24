@@ -117,7 +117,7 @@
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.18920711500272" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="30" y="23" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
-  <table-pane table-ref="TAB7" x="356" y="23" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB7" x="359" y="23" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-pane table-ref="TAB14" x="171" y="198" bgColor="0xeeeeee" fgColor="0x000000" rounded="true" dashed="false"/>
   <table-link relationship-ref="REL30" pkConnection="0.26063829787234044" fkConnection="0.851063829787234" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
   <table-link relationship-ref="REL28" pkConnection="0.6911764705882353" fkConnection="0.1722689075630252" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
