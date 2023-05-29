@@ -1,0 +1,11 @@
+CREATE DATABASE course_db;
+
+#Cria um usuário
+CREATE USER course WITH PASSWORD '12345';
+
+#Atribui permissão para o usuário acessar o banco
+GRANT ALL PRIVILEGES ON DATABASE course_db TO course;
+
+#conectando no banco
+psql -U course -p 5432 -d course_db
+
