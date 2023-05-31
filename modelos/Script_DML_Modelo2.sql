@@ -28,6 +28,5 @@ INSERT INTO leciona (registro,codigo) VALUES (1,'C1');
 INSERT INTO leciona (registro,codigo) VALUES (1,'C4');
 INSERT INTO leciona (registro,codigo) VALUES (2,'C2');
 INSERT INTO leciona (registro,codigo) VALUES (3,'C3');
-
-
+INSERT INTO leciona (registro,codigo) VALUES (4,'C4');
 
