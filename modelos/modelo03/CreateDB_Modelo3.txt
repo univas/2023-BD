@@ -1,0 +1,14 @@
+CREATE DATABASE locadora_db;
+
+#Cria um usuário
+CREATE USER locadora WITH PASSWORD '12345';
+
+#Atribui permissão para o usuário acessar o banco
+GRANT ALL PRIVILEGES ON DATABASE locadora_db TO locadora;
+
+#conectando no banco
+psql -U locadora -p 5432 -d locadora_db
+
+ou
+
+psql -U locadora -p 5433 -d locadora_db
