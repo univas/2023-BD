@@ -1,0 +1,14 @@
+#Conectar como administrador
+psql -U postgres -p 5433
+
+
+CREATE DATABASE vendas_db;
+
+#Cria um usuário
+CREATE USER venda WITH PASSWORD '12345';
+
+#Atribui permissão para o usuário acessar o banco
+GRANT ALL PRIVILEGES ON DATABASE vendas_db TO venda;
+
+#conectando no banco
+psql -U venda -p 5433 -d vendas_db
